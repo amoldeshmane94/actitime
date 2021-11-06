@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suiteparallel]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Firefox-parallel(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="TestPackage.TestClass1">
+        <methods>
+          <include name="siut"/>
+          <include name="test1"/>
+          <include name="class11"/>
+          <include name="test"/>
+          <include name="method1"/>
+          <include name="test11"/>
+          <include name="test2"/>
+          <include name="method"/>
+          <include name="class1"/>
+          <include name="suut"/>
+        </methods>
+      </class> <!-- TestPackage.TestClass1 -->
+    </classes>
+  </test> <!-- Firefox-parallel(failed) -->
+</suite> <!-- Failed suite [Suiteparallel] -->

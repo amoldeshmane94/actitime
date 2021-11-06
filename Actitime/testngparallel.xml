@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suiteparallel" thread-count="2" parallel ="tests">
+  <test  name="Chrome-parallel">
+  <parameter name="browser" value="Chrome" />
+    <classes>
+          <class name="TestPackage.TestClass1"/>
+    </classes>
+  </test> <!-- Test-parallel -->
+  
+  <test  name="Firefox-parallel">
+  <parameter name="browser" value="firefox" />
+    <classes>
+          <class name="TestPackage.TestClass1"/>
+    </classes>
+  </test> <!-- Test-parallel -->
+  
+</suite> <!-- Suite-parallel -->
