@@ -13,6 +13,11 @@ public class Base {
 		WebDriver driver=new ChromeDriver();
 		return driver;
 	}
-	
+	public static WebDriver openFireFoxBrower()
+	{
+		System.setProperty("webdriver.gecko.driver", "D:\\QA\\new\\geckodriver-v0.30.0-win32 (1)\\geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		return driver;
+	}
 
 }

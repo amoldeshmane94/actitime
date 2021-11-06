@@ -45,10 +45,7 @@ public class TestClass1 extends Base {
 	
 	
 	@BeforeSuite
-	public void siut()
-	{
-      System.out.println("Before suit");
-	}
+	
 	
 	@BeforeTest
 	@Parameters("browser")
